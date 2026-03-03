@@ -15,64 +15,67 @@ body {
     width: 100%;
 }
 
-/* SIDEBAR */
-.sidebar {
+/* BarraLateral */
+.BarraLateral {
     width: 250px;
     height: 100vh;
     background-color: #111827;
     color: white;
     position: fixed;
     padding: 30px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .profile-pic {
-    width: 100px;
-    height: 100px;
+    width: 120px;
+    height: 120px;
     border-radius: 50%;
     margin-bottom: 20px;
 }
 
-.sidebar ul {
+.BarraLateral ul {
     list-style: none;
 }
 
-.sidebar ul li {
+.BarraLateral ul li {
     margin: 20px 0;
 }
 
-.sidebar ul li a {
+.BarraLateral ul li a {
     color: #cbd5e1;
     text-decoration: none;
     transition: 0.3s;
 }
 
-.sidebar ul li a:hover,
-.sidebar ul li a.active {
+.BarraLateral ul li a.active {
     color: #38bdf8;
 }
 
-/* CONTENT */
-.content {
+/* CONTENIDO */
+.contenido {
     margin-left: 250px;
     padding: 40px;
     width: 100%;
 }
 
-.section {
+.seccion {
     min-height: 100vh;
     padding: 60px 0;
 }
 
-.section h2 {
+.seccion h2 {
     margin-bottom: 20px;
     font-size: 28px;
 }
 
-.section h1 {
+.seccion h1 {
     font-size: 40px;
 }
 
-.section span {
+.seccion  span {
     color: #2563eb;
 }
 
