@@ -23,18 +23,40 @@ body {
     color: white;
     position: fixed;
     padding: 30px 20px;
+    text-align: center;
+}
+
+.encabezadoFijo {
+  background-color: blueviolet;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    position: absolute;
+    gap: 10px;
+    top: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: calc(100% - 40px);
+    display: flex;
+}
+
+.ingles {
+    font-size: 18px;
+    color: #f4f6f9;
+    cursor: pointer;
+} 
+
+.contenidoBarraLateral {
+    height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    text-align: center;
 }
 
 .FotoPerfil {
     width: 190px;
     height: 190px;
     border-radius: 50%;
-    margin-bottom: 20px;
 }
 
 .BarraLateral ul {
@@ -62,6 +84,18 @@ body {
 
 .BarraLateral ul li a:hover {
     transform: scale(1.5);
+}
+
+.encabezadoFijo2 {
+  background-color: aqua;
+  text-align: right;
+  position: relative;
+}
+
+.iconoSol {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
 }
 
 /* CONTENIDO */
@@ -94,6 +128,20 @@ body {
     font-size: 18px;
     line-height: 1.6;
     color: #4b5563;
+    font-family: 'Poppins', sans-serif;
+}
+
+.desarrollador {
+    font-size: 18px;
+    margin-top: 10px;
+    background-color: #111827;
+    padding: 5px 10px;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+.desarrollador span {
+    color: #cbd5e1;
     font-family: 'Poppins', sans-serif;
 }
 
