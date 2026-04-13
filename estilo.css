@@ -10,7 +10,7 @@ body {
     background-color: #f4f6f9;
 }
 
-.container {
+.contenedor {
     display: flex;
     width: 100%;
 }
@@ -25,25 +25,6 @@ body {
     padding: 30px 20px;
     text-align: center;
 }
-
-.encabezadoFijo {
-  background-color: blueviolet;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    position: absolute;
-    gap: 10px;
-    top: 30px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: calc(100% - 40px);
-    display: flex;
-}
-
-.ingles {
-    font-size: 18px;
-    color: #f4f6f9;
-    cursor: pointer;
-} 
 
 .contenidoBarraLateral {
     height: 100%;
@@ -86,15 +67,43 @@ body {
     transform: scale(1.5);
 }
 
-.encabezadoFijo2 {
-  background-color: aqua;
-  text-align: right;
-  position: relative;
+.pieBarraLateral {
+    background-color: blueviolet;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    position: absolute;
+    gap: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: calc(100% - 40px);
+    display: flex;
 }
 
-.iconoSol {
+.encabezadoFijo2 {
+    display: flex;
+    justify-content: right;
+    gap: 10px;
+    padding: 10px;
+    position: fixed;
+    top: 0;
+    left: 250px;
+    width: calc(100% - 250px);
+    z-index: 1000;
+}
+
+.iconoLuna {
     width: 30px;
     height: 30px;
+    cursor: pointer;
+}
+
+.seleccionIdioma2 {
+    margin-right: 10px;
+    background-color: #1f2937;
+    padding: 1px 10px;
+    border-radius: 12px;
+    font-size: 18px;
+    color: #cbd5e1;
     cursor: pointer;
 }
 
@@ -205,3 +214,28 @@ body {
     transition: transform 0.3s;
 }
 
+.apartadoGithub {
+    display: grid;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.github {
+    font-size: 18px;
+    color: #4b5563;
+}
+
+.iconoGithub {
+    margin-top: 10px;
+    width: 30%;
+    height: 30%;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.iconoGithub:hover {
+    transform: scale(1.2);
+    transition: transform 0.3s;
+}
