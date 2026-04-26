@@ -22,3 +22,16 @@ window.addEventListener("scroll", () => {
         }
     });
 });
+
+// Modo dark y cambio de icono luna/sol
+const iconoLuna = document.querySelector('.iconoLuna');
+const contenido = document.querySelector('.contenido');
+
+iconoLuna.addEventListener('click', () => {
+    contenido.classList.toggle('dark-mode');
+    if (iconoLuna.src.includes('luna.png')) {
+        iconoLuna.src = 'imagen/sol.png';
+    } else {
+        iconoLuna.src = 'imagen/luna.png';
+    }
+});

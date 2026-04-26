@@ -114,6 +114,25 @@ body {
     width: 100%;
 }
 
+.contenido.dark-mode {
+    background-color: #18181b;
+}
+
+.contenido.dark-mode .seccion,
+.contenido.dark-mode .seccion p,
+.contenido.dark-mode .seccion h1,
+.contenido.dark-mode .seccion h2,
+.contenido.dark-mode .desarrollador,
+.contenido.dark-mode .descargar,
+.contenido.dark-mode .linkedin,
+.contenido.dark-mode .github {
+    color: #e5e7eb !important;
+}
+
+.contenido.dark-mode .desarrollador {
+    background-color: #27272a;
+}
+
 .seccion {
     min-height: 100vh;
     padding: 60px 0;
