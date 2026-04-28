@@ -2,7 +2,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, sans-serif;
 }
 
 body {
@@ -17,7 +16,7 @@ body {
 
 /* BarraLateral */
 .BarraLateral {
-    width: 250px;
+    width: 300px;
     height: 100vh;
     background-color: #111827;
     color: white;
@@ -31,7 +30,6 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
 }
 
 .FotoPerfil {
@@ -68,7 +66,6 @@ body {
 }
 
 .pieBarraLateral {
-    background-color: blueviolet;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     position: absolute;
@@ -79,16 +76,19 @@ body {
     display: flex;
 }
 
+/* CONTENIDO */
 .encabezadoFijo2 {
+  background-color: #38bdf8;
     display: flex;
     justify-content: right;
     gap: 10px;
     padding: 10px;
     position: fixed;
     top: 0;
-    left: 250px;
-    width: calc(100% - 250px);
+    left: 300px;
+    width: calc(100% - 300px);
     z-index: 1000;
+    height: 70px;
 }
 
 .iconoLuna {
@@ -107,13 +107,20 @@ body {
     cursor: pointer;
 }
 
-/* CONTENIDO */
+.iconoDescargaBarraSuperior {
+    margin-right: 10px;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
 .contenido {
-    margin-left: 250px;
+    margin-left: 300px;
     padding: 40px;
     width: 100%;
 }
 
+/* MODO OSCURO */
 .contenido.dark-mode {
     background-color: #18181b;
 }
@@ -133,9 +140,10 @@ body {
     background-color: #27272a;
 }
 
+/* SECCIONES */
 .seccion {
     min-height: 100vh;
-    padding: 60px 0;
+    padding: 80px 0;
     font-family: 'Poppins', sans-serif;
 }
 
