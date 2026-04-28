@@ -83,6 +83,14 @@ body {
     margin-bottom: 20px;
 }
 
+.descargaCV, .github, .linkedin {
+    display: block;
+    font-size: 12px;
+    color: #94a3b8;
+    margin-top: 5px;
+    transition: 0.3s;   
+}
+
 .iconoItem img {
     width: 32px;
     height: 32px;
