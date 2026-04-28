@@ -78,9 +78,13 @@ body {
 
 .iconosSociales {
     display: flex;
-    justify-content: center;
+    justify-content: left;
     gap: 15px;
-    margin-bottom: 20px;
+    margin-bottom: 5px;
+}
+
+.iconosSociales a {
+  text-decoration: none;
 }
 
 .descargaCV, .github, .linkedin {
@@ -88,7 +92,7 @@ body {
     font-size: 12px;
     color: #94a3b8;
     margin-top: 5px;
-    transition: 0.3s;   
+    transition: 0.3s;
 }
 
 .iconoItem img {
@@ -101,15 +105,6 @@ body {
 .iconoItem:hover img {
     filter: grayscale(0%) brightness(100%);
     transform: translateY(-3px);
-}
-
-.btnContacto {
-    font-size: 14px;
-    color: #38bdf8;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    font-weight: 600;
-    cursor: pointer;
 }
 
 /* --- CONTENIDO PRINCIPAL --- */
@@ -159,7 +154,7 @@ body {
 
 /* Secciones */
 .seccion {
-    padding: 120px 80px 60px; /* Más aire a los lados */
+    padding: 90px 80px 60px; /* Más aire a los lados */
     min-height: 100vh;
     max-width: 1000px;
 }
