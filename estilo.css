@@ -5,8 +5,10 @@
 }
 
 body {
-    display: flex;
-    background-color: #f4f6f9;
+    background-color: #f8fafc; /* Un gris más suave */
+    font-family: 'Poppins', sans-serif;
+    color: #1e293b;
+    overflow-x: hidden;
 }
 
 .contenedor {
@@ -14,255 +16,233 @@ body {
     width: 100%;
 }
 
-/* BarraLateral */
+/* --- BARRA LATERAL --- */
 .BarraLateral {
-    width: 300px;
+    width: 320px; /* Reducido un poco para mejor equilibrio */
     height: 100vh;
-    background-color: #111827;
+    background-color: #0f172a; /* Azul noche más profundo */
     color: white;
     position: fixed;
-    padding: 30px 20px;
-    text-align: center;
-}
-
-.contenidoBarraLateral {
-    height: 100%;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    justify-content: space-between;
+    padding: 40px 0;
+    z-index: 1001;
+}
+
+.perfilContenedor {
+    text-align: center;
+    margin-bottom: 40px;
 }
 
 .FotoPerfil {
-    width: 190px;
-    height: 190px;
+    width: 180px;
+    height: 180px;
     border-radius: 50%;
+    border: 3px;
+    object-fit: cover;
 }
 
-.BarraLateral ul {
+/* Menú alineado a la izquierda */
+.menuPrincipal ul {
     list-style: none;
 }
 
-.BarraLateral ul li {
-    margin: 20px 0;
+.menuPrincipal ul li {
+    margin: 5px 0;
 }
 
-.BarraLateral ul li a {
-    color: #cbd5e1;
+.menuPrincipal ul li a {
+    color: #94a3b8;
     text-decoration: none;
-    display: inline-block;
-    font-family: 'Poppins', sans-serif;
-    font-size: 18px;
-    transform: scale(1);
-    transition: color 0.3s, transform 0.3s;
+    display: block;
+    padding: 12px 40px;
+    font-size: 17px;
+    transition: all 0.3s ease;
+    border-left: 4px solid transparent;
 }
 
-.BarraLateral ul li a.active {
+.menuPrincipal ul li a:hover, 
+.menuPrincipal ul li a.active {
     color: #38bdf8;
-    transform: scale(1.5);
+    background-color: rgba(56, 189, 248, 0.1);
+    border-left: 4px solid #38bdf8;
+    padding-left: 45px; /* Pequeño desplazamiento al hacer hover */
 }
 
-.BarraLateral ul li a:hover {
-    transform: scale(1.5);
-}
-
+/* Pie de barra lateral con iconos sociales */
 .pieBarraLateral {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    position: absolute;
-    gap: 10px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: calc(100% - 40px);
-    display: flex;
+    text-align: center;
+    padding: 0 20px;
 }
 
-/* CONTENIDO */
-.encabezadoFijo2 {
-  background-color: #38bdf8;
+.iconosSociales {
     display: flex;
-    justify-content: right;
-    gap: 10px;
-    padding: 10px;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.iconoItem img {
+    width: 32px;
+    height: 32px;
+    filter: grayscale(100%) brightness(150%);
+    transition: 0.3s;
+}
+
+.iconoItem:hover img {
+    filter: grayscale(0%) brightness(100%);
+    transform: translateY(-3px);
+}
+
+.btnContacto {
+    font-size: 14px;
+    color: #38bdf8;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+/* --- CONTENIDO PRINCIPAL --- */
+.contenido {
+    margin-left: 320px;
+    width: calc(100% - 320px);
+    min-height: 100vh;
+}
+
+/* Encabezado superior derecho */
+.barraHerramientas {
     position: fixed;
     top: 0;
-    left: 300px;
-    width: calc(100% - 300px);
-    z-index: 1000;
+    right: 0;
+    width: calc(100% - 320px);
     height: 70px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0 40px;
+    background-color: rgba(248, 250, 252, 0.8);
+    backdrop-filter: blur(10px);
+    z-index: 1000;
+}
+
+.controles {
+    display: flex;
+    align-items: center;
+    gap: 20px;
 }
 
 .iconoLuna {
-    width: 30px;
-    height: 30px;
+    width: 24px;
     cursor: pointer;
+    transition: 0.3s;
 }
 
 .seleccionIdioma2 {
-    margin-right: 10px;
-    background-color: #1f2937;
-    padding: 1px 10px;
-    border-radius: 12px;
-    font-size: 18px;
-    color: #cbd5e1;
+    background: #e2e8f0;
+    border: none;
+    padding: 5px 12px;
+    border-radius: 8px;
+    font-weight: 600;
+    color: #475569;
     cursor: pointer;
 }
 
-.iconoDescargaBarraSuperior {
-    margin-right: 10px;
-    width: 30px;
-    height: 30px;
-    cursor: pointer;
-}
-
-.contenido {
-    margin-left: 300px;
-    padding: 40px;
-    width: 100%;
-}
-
-/* MODO OSCURO */
-.contenido.dark-mode {
-    background-color: #18181b;
-}
-
-.contenido.dark-mode .seccion,
-.contenido.dark-mode .seccion p,
-.contenido.dark-mode .seccion h1,
-.contenido.dark-mode .seccion h2,
-.contenido.dark-mode .desarrollador,
-.contenido.dark-mode .descargar,
-.contenido.dark-mode .linkedin,
-.contenido.dark-mode .github {
-    color: #e5e7eb !important;
-}
-
-.contenido.dark-mode .desarrollador {
-    background-color: #27272a;
-}
-
-/* SECCIONES */
+/* Secciones */
 .seccion {
+    padding: 120px 80px 60px; /* Más aire a los lados */
     min-height: 100vh;
-    padding: 80px 0;
-    font-family: 'Poppins', sans-serif;
-}
-
-.seccion h2 {
-    margin-bottom: 20px;
-    font-size: 28px;
+    max-width: 1000px;
 }
 
 .seccion h1 {
-    font-size: 40px;
+    font-size: 3.5rem;
+    font-weight: 600;
+    line-height: 1.1;
+    margin-bottom: 20px;
 }
 
-.seccion  span {
+.seccion h1 span {
+    color: #2563eb;
+    display: block;
+}
+
+.etiqueta-cargo {
+    display: inline-block;
+    background-color: #1e293b;
+    color: #f1f5f9;
+    padding: 6px 15px;
+    border-radius: 6px;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
+.descripcion-intro, .seccion p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #475569;
+    margin-bottom: 20px;
+}
+
+.seccion h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.seccion h2::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 60px;
+    height: 4px;
+    background: #38bdf8;
+}
+
+/* Utilidades habilidades */
+.habilidades-grid p {
+    margin-bottom: 10px;
+}
+
+.habilidades-grid strong {
     color: #2563eb;
 }
 
-.seccion p {
-    font-size: 18px;
-    line-height: 1.6;
-    color: #4b5563;
-    font-family: 'Poppins', sans-serif;
+.lista-blanda {
+    list-style: none;
 }
 
-.desarrollador {
-    font-size: 18px;
-    margin-top: 10px;
-    background-color: #111827;
-    padding: 5px 10px;
-    border-radius: 5px;
-    display: inline-block;
+.lista-blanda li {
+    padding: 8px 0;
+    padding-left: 25px;
+    position: relative;
 }
 
-.desarrollador span {
-    color: #cbd5e1;
-    font-family: 'Poppins', sans-serif;
+.lista-blanda li::before {
+    content: '→';
+    position: absolute;
+    left: 0;
+    color: #38bdf8;
 }
 
-.enlaces {
-    margin-top: 20px;
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    padding: 10px;
-    gap: 10px;
-    font-family: 'Poppins', sans-serif;
+/* MODO OSCURO (Contenido) */
+.contenido.dark-mode {
+    background-color: #0f172a;
+    color: white;
 }
 
-.apartadoDescarga {
-    display: grid;
-    padding: 5px;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+.contenido.dark-mode .barraHerramientas {
+    background-color: rgba(15, 23, 42, 0.8);
 }
 
-.descargar {
-    font-size: 18px;
-    color: #4b5563;
+.contenido.dark-mode .descripcion-intro, 
+.contenido.dark-mode .seccion p {
+    color: #94a3b8;
 }
 
-.iconoDescarga {
-    margin-top: 10px;
-    width: 30%;
-    height: 30%;
-    cursor: pointer;
-}
-
-.iconoDescarga:hover {
-    transform: scale(1.2);
-    transition: transform 0.3s;
-}
-
-.apartadoLinkedin {
-    display: grid;
-    padding: 10px;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
-
-.linkedin {
-    font-size: 18px;
-    color: #4b5563;
-}
-
-.iconoLinkedin {
-    margin-top: 10px;
-    width: 30%;
-    height: 30%;
-    margin-left: 10px;
-    cursor: pointer;
-}
-
-.iconoLinkedin:hover {
-    transform: scale(1.2);
-    transition: transform 0.3s;
-}
-
-.apartadoGithub {
-    display: grid;
-    padding: 10px;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
-
-.github {
-    font-size: 18px;
-    color: #4b5563;
-}
-
-.iconoGithub {
-    margin-top: 10px;
-    width: 30%;
-    height: 30%;
-    margin-left: 10px;
-    cursor: pointer;
-}
-
-.iconoGithub:hover {
-    transform: scale(1.2);
-    transition: transform 0.3s;
+.contenido.dark-mode .seccion h1 {
+    color: white;
 }

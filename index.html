@@ -2,97 +2,90 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Portafolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio - Josué Morales</title>
     <link rel="stylesheet" href="estilo.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
 
     <div class="contenedor">
-        <!-- BarraLateral --> 
         <aside class="BarraLateral">
-          <div class="contenidoBarraLateral">
-            <nav>
-              <img src="imagen/fotoPerfil.png" class="FotoPerfil" >
-              <ul>
-                <li><a href="#inicio" class="nav-link active">Inicio</a></li>
-                <li><a href="#sobre-mi" class="nav-link">Sobre mí</a></li>
-                <li><a href="#habilidades" class="nav-link">Habilidades</a></li>
-                <li><a href="#proyectos" class="nav-link">Proyectos</a></li>
-              </ul>
-            </nav>
-          </div>
-          <footer class="pieBarraLateral">
-            <label >Contáctame</label>
-          </footer>
+            <div class="contenidoSuperior">
+                <div class="perfilContenedor">
+                    <img src="imagen/fotoPerfil.png" class="FotoPerfil" alt="Foto de Josué Morales">
+                </div>
+                
+                <nav class="menuPrincipal">
+                    <ul>
+                        <li><a href="#inicio" class="nav-link active">Inicio</a></li>
+                        <li><a href="#sobre-mi" class="nav-link">Sobre mí</a></li>
+                        <li><a href="#habilidades" class="nav-link">Habilidades</a></li>
+                        <li><a href="#proyectos" class="nav-link">Proyectos</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <footer class="pieBarraLateral">
+                <div class="iconosSociales">
+                    <a href="curriculum/Developer - Josue Morales.pdf" class="iconoItem" title="Descargar CV" target="_blank">
+                        <img src="imagen/descarga.png" alt="CV">
+                    </a>
+                    <a href="https://github.com/josueorellana" class="iconoItem" title="GitHub" target="_blank">
+                        <img src="imagen/github.png" alt="GitHub">
+                    </a>
+                    <a href="https://www.linkedin.com/in/josu%C3%A9-david-morales-orellana-44b73b3ab/" class="iconoItem" title="LinkedIn" target="_blank">
+                        <img src="imagen/linkedin.png" alt="LinkedIn">
+                    </a>
+                </div>
+                <label class="btnContacto">Contáctame</label>
+            </footer>
         </aside>
 
-        <!-- CONTENIDO --> 
         <main class="contenido">
-          <header class="encabezadoFijo2">
-            <img src="imagen/descarga.png" class="iconoDescargaBarraSuperior">
-            <img src="imagen/luna.png" class="iconoLuna">
-            <select id="seleccionIdioma2" class="seleccionIdioma2">
-              <option value="es">ESP</option>
-              <option value="en">ENG</option>
-            </select>
-          </header>
+            <header class="barraHerramientas">
+                <div class="controles">
+                    <img src="imagen/luna.png" class="iconoLuna" alt="Modo Oscuro">
+                    <select id="seleccionIdioma2" class="seleccionIdioma2">
+                        <option value="es">ESP</option>
+                        <option value="en">ENG</option>
+                    </select>
+                </div>
+            </header>
 
             <section id="inicio" class="seccion">
                 <h1>Hola, soy <span>Josué David Morales Orellana.</span></h1>
-                <br>
-                <p class="desarrollador"><span>Desarrollador Full Stack Junior</span></p>
-                <br> <br>
-                <p>Soy estudiante de Ingeniería en Sistemas y Redes Informáticas 
-                  con interés en el desarrollo web y la creación de 
-                  soluciones tecnológicas eficientes. Me especializo 
-                  en el desarrollo de aplicaciones utilizando tecnologías 
-                  como HTML, CSS, JavaScript y PHP. Soy una 
-                  persona responsable, organizada y orientada a resultados, 
-                  siempre dispuesto a aprender y mejorar continuamente.</p>
+                <p class="etiqueta-cargo"><span>Desarrollador Full Stack Junior</span></p>
+                <p class="descripcion-intro">Soy estudiante de Ingeniería en Sistemas y Redes Informáticas con interés en el desarrollo web y la creación de soluciones tecnológicas eficientes. Me especializo en el desarrollo de aplicaciones utilizando tecnologías como HTML, CSS, JavaScript y PHP.</p>
             </section>
 
             <section id="sobre-mi" class="seccion">
                 <h2>Sobre mí</h2>
-                <p>Actualmente soy estudiante de Ingeniería en Sistemas y Redes Informáticas, con formación en desarrollo web y bases de datos. He trabajado en proyectos académicos donde he aplicado tecnologías como HTML, CSS, JavaScript y PHP, desarrollando aplicaciones funcionales y orientadas a resolver necesidades reales.</p>
-                <br>
-                <p>Soy una persona responsable, comprometida y con facilidad para el trabajo en equipo. Mi objetivo es seguir creciendo profesionalmente en el área del desarrollo de software y aportar soluciones innovadoras.</p>
-
-              <section class="enlaces">
-                <div class="apartadoDescarga">
-                  <label class="descargar">Descargar CV</label>
-                  <a href="curriculum/Developer - Josue Morales.pdf" download>
-                    <img src="imagen/descarga.png" class="iconoDescarga"></a>
-                </div>
-                <div class="apartadoLinkedin">
-                  <label class="linkedin">Linkedin</label>
-                  <a href="https://www.linkedin.com/in/josu%C3%A9-david-morales-orellana-44b73b3ab/" target="_blank">
-                  <img src="imagen/linkedin.png" class="iconoLinkedin"></a>
-                </div>
-                <div class="apartadoGithub">
-                  <label class="github">Github</label>
-                  <a href="https://github.com/josueorellana" target="_blank">
-                  <img src="imagen/github.png" class="iconoGithub"></a>
-                </div>
-              </section>
+                <p>Actualmente soy estudiante de Ingeniería en Sistemas y Redes Informáticas, con formación en desarrollo web y bases de datos. He trabajado en proyectos académicos aplicando tecnologías modernas para resolver necesidades reales.</p>
+                <p>Mi objetivo es seguir creciendo profesionalmente en el área del desarrollo de software y aportar soluciones innovadoras.</p>
             </section>
 
             <section id="habilidades" class="seccion">
                 <h2>Habilidades técnicas</h2>
-                <p><span>Lenguajes de programación:</span> HTML, CSS, JavaScript, PHP.</p>
-                <p><span>Frameworks:</span> Bootstrap.</p>
-                <p><span>Bases de datos:</span> MariaDB, MongoDB, MySQL.</p>
-                <p><span>Control de versiones:</span> Git.</p>
-                <br><br>
-                <h2>Habilidades blandas</h2>
-                <p><span>Comunicación:</span> Capacidad para expresar ideas de manera clara y efectiva.</p>
-                <p><span>Trabajo en equipo:</span> Colaboración y cooperación con otros para alcanzar objetivos comunes.</p>
-                <p><span>Resolución de problemas:</span> Habilidad para identificar problemas y encontrar soluciones efectivas.</p>
-                <p><span>Adaptabilidad:</span> Capacidad para ajustarse a cambios y nuevas situaciones.</p>
+                <div class="habilidades-grid">
+                    <p><strong>Lenguajes:</strong> HTML, CSS, JavaScript, PHP.</p>
+                    <p><strong>Frameworks:</strong> Bootstrap.</p>
+                    <p><strong>Bases de datos:</strong> MariaDB, MongoDB, MySQL.</p>
+                    <p><strong>Herramientas:</strong> Git, GitHub.</p>
+                </div>
+                
+                <h2 class="subtitulo">Habilidades blandas</h2>
+                <ul class="lista-blanda">
+                    <li>Comunicación efectiva</li>
+                    <li>Trabajo en equipo</li>
+                    <li>Resolución de problemas</li>
+                    <li>Adaptabilidad</li>
+                </ul>
             </section>
 
             <section id="proyectos" class="seccion">
                 <h2>Proyectos</h2>
-            </section>
+                </section>
         </main>
     </div>
 
