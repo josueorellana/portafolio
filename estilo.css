@@ -223,8 +223,8 @@ body {
 
 /* --- CONTENIDO PRINCIPAL --- */
 .contenido {
-    margin-left: 320px;
-    width: calc(100% - 320px);
+    margin-left: 340px;
+    width: calc(100% - 340px);
     min-height: 100vh;
 }
 
