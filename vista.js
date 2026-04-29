@@ -35,3 +35,20 @@ iconoLuna.addEventListener('click', () => {
         iconoLuna.src = 'imagen/luna.png';
     }
 });
+
+// Carrusel de proyectos: botones de navegación
+const btnIzq = document.querySelector('.carrusel-btn-izq');
+const btnDer = document.querySelector('.carrusel-btn-der');
+const carruselTrack = document.querySelector('.carrusel-track');
+
+if (btnIzq && btnDer && carruselTrack) {
+    const cardProyecto = carruselTrack.querySelector('.card-proyecto');
+    let scrollAmount = cardProyecto ? cardProyecto.offsetWidth + 30 : 320; // 30 es el gap
+
+    btnIzq.addEventListener('click', () => {
+        carruselTrack.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
+    });
+    btnDer.addEventListener('click', () => {
+        carruselTrack.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+    });
+}
