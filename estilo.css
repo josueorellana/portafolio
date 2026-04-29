@@ -49,13 +49,16 @@
     height: 28px;
 }
 .carrusel-btn-izq {
-    margin-right: 10px;
+    margin-right: -10px;
+    z-index: 2;
 }
 .carrusel-btn-der {
-    margin-left: 10px;
+    margin-left: -10px;
+    z-index: 2;
 }
 .carrusel-proyectos {
     align-items: center;
+    width: 100%;
 }
 
 .card-proyecto {
@@ -116,7 +119,10 @@
     margin-top: auto;
     align-self: flex-start;
     text-decoration: none;
-    color: #54657c;
+    border-radius: 12px;
+    padding: 8px 16px;
+    background-color: #2563eb;
+    color: #ffffff;
     font-weight: 600;
     font-size: 1.1rem;
     transition: color 0.2s;
