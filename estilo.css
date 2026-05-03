@@ -152,10 +152,10 @@ body {
 
 /* --- BARRA LATERAL --- */
 .BarraLateral {
-    width: 320px; /* Reducido un poco para mejor equilibrio */
+    width: 350px; /* Reducido un poco para mejor equilibrio */
     height: 100vh;
     background-color: #0f172a; /* Azul noche más profundo */
-    color: white;
+    color: rgb(160, 18, 18);
     position: fixed;
     display: flex;
     flex-direction: column;
@@ -341,7 +341,7 @@ body {
 }
 
 .card-formacion {
-    background: #d9dddf;
+    background: #cacaca;
     border-radius: 16px;
     box-shadow: 0 2px 12px rgba(30,41,59,0.07);
     padding: 22px 25px 24px 25px;
