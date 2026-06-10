@@ -348,7 +348,7 @@ body {
     max-width: 600px;
 }
 
-/* Cards de habilidades técnicas */
+/* Tarjetas de habilidades técnicas */
 .cards-habilidades {
     display: flex;
     flex-wrap: wrap;
