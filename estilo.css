@@ -460,7 +460,7 @@ body {
 
 @media (max-width: 767px) {
     html {
-        scroll-padding-top: 120px;
+        scroll-padding-top: 100px;
     }
 
     .contenedor {
@@ -550,7 +550,7 @@ body {
         min-height: auto;
         max-width: 100%;
         padding: 48px 20px;
-        scroll-margin-top: 120px;
+        scroll-margin-top: 100px;
     }
 
     .seccion h1 {
