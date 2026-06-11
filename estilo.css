@@ -450,7 +450,7 @@ body {
     }
 
     .seccion {
-        padding: 90px 48px 56px;
+        padding: 20px 48px 56px;
     }
 
     .seccion h1 {
@@ -549,7 +549,7 @@ body {
     .seccion {
         min-height: auto;
         max-width: 100%;
-        padding: 48px 20px;
+        padding: 20px 20px;
         scroll-margin-top: 80px;
     }
 
@@ -620,7 +620,7 @@ body {
     }
 
     .seccion {
-        padding: 40px 16px;
+        padding: 20px 16px;
     }
 
     .seccion h1 {
