@@ -166,7 +166,7 @@ body {
 
 .perfilContenedor {
     text-align: center;
-    margin-bottom: 40px;
+    margin-bottom: 5px;
 }
 
 .FotoPerfil {
@@ -190,7 +190,7 @@ body {
     color: #94a3b8;
     text-decoration: none;
     display: block;
-    padding: 12px 40px;
+    padding: 5px 40px;
     font-size: 17px;
     transition: all 0.3s ease;
     border-left: 4px solid transparent;
@@ -414,6 +414,13 @@ body {
     position: absolute;
     left: 0;
     color: #38bdf8;
+}
+
+.diplomas-imagen {
+    max-width: 800px;
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(30,41,59,0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
 }
 
 /* MODO OSCURO (Contenido) */
