@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f7f6;
+    color: #1a2231;
+    line-height: 1.6;
+}
+
+h1 {
+    color: #1a2231;
+    margin-bottom: 5px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.formularioContacto {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(25, 34, 49, 0.1);
+}
+
+.formularioContacto label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 600;
+    color: #1a2231;
+}
+
+.formularioContacto input,
+.formularioContacto textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: border-color 0.2s;
+}
+
+.formularioContacto input:focus,
+.formularioContacto textarea:focus {
+    border-color: #1a2231;
+    outline: none;
+}
+
+.botonEnviar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.formularioContacto button {
+    background-color: #334361;
+    color: #ffffff;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.2s;
+}
+
+.formularioContacto button:hover {
+    background-color: #0d1018;
+}
+
+.estado-envio {
+    margin-top: 12px;
+    text-align: center;
+    font-weight: 600;
+    font-size: 0.95rem;
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 12px;
+    }
+
+    h1 {
+        font-size: 1.6rem;
+        margin-top: 6px;
+    }
+
+    .formularioContacto {
+        width: 100%;
+        max-width: 100%;
+        padding: 18px 14px;
+        border-radius: 10px;
+        margin: 12px auto 20px;
+    }
+
+    .formularioContacto label,
+    .formularioContacto input,
+    .formularioContacto textarea,
+    .formularioContacto button {
+        font-size: 15px;
+    }
+
+    .formularioContacto textarea {
+        min-height: 110px;
+    }
+
+    .botonEnviar {
+        width: 100%;
+    }
+
+    .estado-envio {
+        font-size: 0.9rem;
+        line-height: 1.4;
+    }
+}

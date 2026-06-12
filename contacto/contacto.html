@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contactame</title>
+  <link rel="stylesheet" href="contacto.css">
+</head>
+<body>
+  <h1>Contactame</h1>
+  <form class="formularioContacto">
+    <label for="nombre">Nombre:</label><br>
+    <input type="text" id="nombre" placeholder="Escribe tu nombre" name="nombre"><br>
+    <label for="email">Correo electrónico:</label><br>
+    <input type="email" id="email" placeholder="Ingresa tu correo electrónico" name="email"><br>
+    <label for="mensaje">Mensaje:</label><br>
+    <textarea id="mensaje" name="mensaje" placeholder="Enviame un mensaje" rows="4" cols="50"></textarea>
+    <div class="botonEnviar">
+      <button type="submit">Enviar</button>
+    </div>
+  </form>
+
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <script src="contacto.js"></script>
+</body>
+</html>
