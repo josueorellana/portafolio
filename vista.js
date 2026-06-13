@@ -62,7 +62,8 @@ const traducciones = {
         menu: ["Inicio", "Sobre mí", "Formación académica", "Habilidades técnicas", "Proyectos", "Diplomas", "Mis intereses"],
         cv: "Descargar CV",
         github: "GitHub",
-        linkedin: "LinkedIn"
+        linkedin: "LinkedIn",
+        contacto: "Contacto"
     },
     en: {
         inicio: {
@@ -125,7 +126,8 @@ const traducciones = {
         menu: ["Home", "About me", "Academic background", "Technical skills", "Projects", "Diplomas", "My interests"],
         cv: "Download CV",
         github: "GitHub",
-        linkedin: "LinkedIn"
+        linkedin: "LinkedIn",
+        contacto: "Contact"
     }
 };
 
@@ -182,10 +184,11 @@ function cambiarIdioma(idioma) {
         el.textContent = t.intereses.cards[i];
     });
 
-    // Footer: CV, GitHub, LinkedIn
+    // Footer: CV, GitHub, LinkedIn, Contacto
     document.querySelector('.descargaCV').textContent = t.cv;
     document.querySelector('.github').textContent = t.github;
     document.querySelector('.linkedin').textContent = t.linkedin;
+    document.querySelector('.contacto').textContent = t.contacto;
 }
 
 // Evento para el select de idioma
