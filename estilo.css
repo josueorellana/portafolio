@@ -644,6 +644,16 @@ body {
         flex: 1 1 100%;
     }
 
+    .cards-intereses {
+        justify-content: center;
+    }
+
+    .card-interes {
+        flex: 0 1 auto;
+        width: auto;
+        max-width: 280px;
+    }
+
     .cards-habilidades {
         gap: 16px;
     }
