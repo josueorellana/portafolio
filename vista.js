@@ -48,6 +48,17 @@ const traducciones = {
             },
             irGithub: "ir a github"
         },
+        intereses: {
+            titulo: "Mis intereses",
+            cards: [
+                "Desarrollo Full Stack",
+                "Bases de datos y gestión de información",
+                "APIs y servicios web",
+                "Inteligencia Artificial",
+                "Optimización y rendimiento web",
+                "Aprendizaje continuo"
+            ]
+        },
         menu: ["Inicio", "Sobre mí", "Formación académica", "Habilidades técnicas", "Proyectos", "Diplomas", "Mis intereses"],
         cv: "Descargar CV",
         github: "GitHub",
@@ -99,6 +110,17 @@ const traducciones = {
                 desc: "Web application like a community newspaper that allows publishing and managing news in an organized and accessible way."
             },
             irGithub: "go to github"
+        },
+        intereses: {
+            titulo: "My interests",
+            cards: [
+                "Full Stack Development",
+                "Databases and Information Management",
+                "APIs and Web Services",
+                "Artificial Intelligence",
+                "Web Optimization and Performance",
+                "Continuous Learning"
+            ]
         },
         menu: ["Home", "About me", "Academic background", "Technical skills", "Projects", "Diplomas", "My interests"],
         cv: "Download CV",
@@ -153,6 +175,13 @@ function cambiarIdioma(idioma) {
     cardsProy[2].querySelector('h3').textContent = t.proyectos.comunicado.titulo;
     cardsProy[2].querySelector('p').textContent = t.proyectos.comunicado.desc;
     cardsProy[2].querySelector('.irGithub').textContent = t.proyectos.irGithub;
+    // Mis intereses
+    document.querySelector('#mis-intereses h2').textContent = t.intereses.titulo;
+    const cardsInteres = document.querySelectorAll('.card-interes');
+    cardsInteres.forEach((el, i) => {
+        el.textContent = t.intereses.cards[i];
+    });
+
     // Footer: CV, GitHub, LinkedIn
     document.querySelector('.descargaCV').textContent = t.cv;
     document.querySelector('.github').textContent = t.github;
