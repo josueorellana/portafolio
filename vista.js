@@ -48,7 +48,7 @@ const traducciones = {
             },
             irGithub: "ir a github"
         },
-        menu: ["Inicio", "Sobre mí", "Formación académica", "Habilidades técnicas", "Proyectos", "Diplomas"],
+        menu: ["Inicio", "Sobre mí", "Formación académica", "Habilidades técnicas", "Proyectos", "Diplomas", "Mis intereses"],
         cv: "Descargar CV",
         github: "GitHub",
         linkedin: "LinkedIn"
@@ -100,7 +100,7 @@ const traducciones = {
             },
             irGithub: "go to github"
         },
-        menu: ["Home", "About me", "Academic background", "Technical skills", "Projects", "Diplomas"],
+        menu: ["Home", "About me", "Academic background", "Technical skills", "Projects", "Diplomas", "My interests"],
         cv: "Download CV",
         github: "GitHub",
         linkedin: "LinkedIn"
