@@ -399,6 +399,36 @@ body {
     font-size: 1rem;
 }
 
+.cards-intereses {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.card-interes {
+    background: #d9dddf;
+    border-radius: 16px;
+    box-shadow: 0 2px 12px rgba(30,41,59,0.07);
+    padding: 22px 28px 24px 28px;
+    min-width: 220px;
+    flex: 1 1 220px;
+    max-width: 260px;
+    transition: transform 0.2s, box-shadow 0.2s;
+    color: #334155;
+    font-size: 1rem;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.card-interes:hover {
+    transform: translateY(-6px) scale(1.03);
+    box-shadow: 0 6px 24px rgba(56,189,248,0.13);
+}
+
 .lista-blanda {
     list-style: none;
 }
@@ -433,6 +463,11 @@ body {
 
 .contenido.dark-mode .barraHerramientas {
     background-color: rgba(15, 23, 42, 0.8);
+}
+
+.contenido.dark-mode .card-interes {
+    background: #1e293b;
+    color: #e2e8f0;
 }
 
 .contenido.dark-mode .descripcion-intro, 
@@ -472,7 +507,8 @@ body {
         scroll-padding-top: 80px;
     }
 
-    #diplomas {
+    #diplomas,
+    #mis-intereses {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -480,7 +516,8 @@ body {
         padding-top: 24px;
     }
 
-    #diplomas h2 {
+    #diplomas h2,
+    #mis-intereses h2 {
         margin-bottom: 16px;
     }
 
@@ -601,7 +638,8 @@ body {
         max-width: 100%;
     }
 
-    .card-habilidad {
+    .card-habilidad,
+    .card-interes {
         min-width: 0;
         flex: 1 1 100%;
     }
@@ -677,6 +715,7 @@ body {
 
     .card-formacion,
     .card-habilidad,
+    .card-interes,
     .card-proyecto-info {
         padding-left: 16px;
         padding-right: 16px;
